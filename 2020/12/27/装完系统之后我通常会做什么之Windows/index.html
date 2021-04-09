@@ -1,0 +1,678 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/images/favicon.ico">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" >
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="纪录个人生活点滴，分享与交流知识、技术。">
+  <meta name="author" content="Hung">
+  <meta name="keywords" content="大耳帽兜, 个人博客, personal blog">
+  <title>装完系统之后我通常会做什么之Windows - 大耳帽兜</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/darcula.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"blog.assemblykitten.codes","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":"G-TJ5CN0L957","gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJ5CN0L957"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TJ5CN0L957');
+  </script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>大耳帽兜的个人博客</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" href="javascript:;" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:;">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/images/posts/%E8%A3%85%E5%AE%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E5%90%8E%E6%88%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E5%81%9A%E4%BB%80%E4%B9%88%E4%B9%8BWindows/index.jpeg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="装完系统之后我通常会做什么之Windows">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-12-27 17:14" pubdate>
+        2020年12月27日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.8k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      23
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">装完系统之后我通常会做什么之Windows</h1>
+            
+            <div class="markdown-body">
+              <blockquote>
+<p>Tips: 本篇文章会根据自身使用习惯或系统更新不定时更新！！！</p>
+</blockquote>
+<h2 id="设置自身使用习惯及优化系统"><a href="#设置自身使用习惯及优化系统" class="headerlink" title="设置自身使用习惯及优化系统"></a>设置自身使用习惯及优化系统</h2><h3 id="桌面背景"><a href="#桌面背景" class="headerlink" title="桌面背景"></a>桌面背景</h3><p><code>Windows 10</code> 的蓝背景晚上看的我觉得不舒服。太亮了！选一个不太亮的背景图是个很好的选择。</p>
+<p><img src="/images/posts/%E8%A3%85%E5%AE%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E5%90%8E%E6%88%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E5%81%9A%E4%BB%80%E4%B9%88%E4%B9%8BWindows/%E6%A1%8C%E9%9D%A2%E8%83%8C%E6%99%AF.png" srcset="/img/loading.gif" alt="桌面背景"></p>
+<h3 id="任务栏"><a href="#任务栏" class="headerlink" title="任务栏"></a>任务栏</h3><p>任务栏的搜索框改成搜索图标。</p>
+<p><img src="/images/posts/%E8%A3%85%E5%AE%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E5%90%8E%E6%88%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E5%81%9A%E4%BB%80%E4%B9%88%E4%B9%8BWindows/%E4%BB%BB%E5%8A%A1%E6%A0%8F.png" srcset="/img/loading.gif" alt="任务栏"></p>
+<h3 id="快速操作"><a href="#快速操作" class="headerlink" title="快速操作"></a>快速操作</h3><p>全关，用的时候再开</p>
+<p><img src="/images/posts/%E8%A3%85%E5%AE%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E5%90%8E%E6%88%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E5%81%9A%E4%BB%80%E4%B9%88%E4%B9%8BWindows/%E5%BF%AB%E9%80%9F%E6%93%8D%E4%BD%9C.png" srcset="/img/loading.gif" alt="快速操作"></p>
+<h3 id="显示缩放"><a href="#显示缩放" class="headerlink" title="显示缩放"></a>显示缩放</h3><p>？为什么是 <code>175%</code></p>
+<p>：显示器的分辨率是 <code>3840x2160</code>，按正常来计算，UI 分辨率为 <code>1920x1080</code>，那么放大 <code>200%</code> 就可以了，但是，<code>Windows</code> 的部分应用界面不支持放大 <code>200%</code>，以及一些应用的图标不支持放大 <code>200%</code>，这就存在了一些兼容性问题，所以，只能放大到 <code>175%</code>，此时的 UI 分辨率为 <code>2194x1234</code>。</p>
+<p><img src="/images/posts/%E8%A3%85%E5%AE%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E5%90%8E%E6%88%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E5%81%9A%E4%BB%80%E4%B9%88%E4%B9%8BWindows/%E6%98%BE%E7%A4%BA%E7%BC%A9%E6%94%BE.png" srcset="/img/loading.gif" alt="显示缩放"></p>
+<h3 id="通知区域"><a href="#通知区域" class="headerlink" title="通知区域"></a>通知区域</h3><p>个人比较喜欢始终显示所有图标。</p>
+<p><img src="/images/posts/%E8%A3%85%E5%AE%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E5%90%8E%E6%88%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E5%81%9A%E4%BB%80%E4%B9%88%E4%B9%8BWindows/%E9%80%9A%E7%9F%A5%E5%8C%BA%E5%9F%9F.png" srcset="/img/loading.gif" alt="通知区域"></p>
+<h3 id="输入法"><a href="#输入法" class="headerlink" title="输入法"></a>输入法</h3><p>微软自带的输入法就觉得挺好用的，默认模式是英文。</p>
+<p><img src="/images/posts/%E8%A3%85%E5%AE%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E5%90%8E%E6%88%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E5%81%9A%E4%BB%80%E4%B9%88%E4%B9%8BWindows/%E8%BE%93%E5%85%A5%E6%B3%95.png" srcset="/img/loading.gif" alt="输入法"></p>
+<h3 id="重命名电脑名称"><a href="#重命名电脑名称" class="headerlink" title="重命名电脑名称"></a>重命名电脑名称</h3><p>电脑昵称喜欢自己命名，不喜欢随机字符串。</p>
+<p><img src="/images/posts/%E8%A3%85%E5%AE%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E5%90%8E%E6%88%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E5%81%9A%E4%BB%80%E4%B9%88%E4%B9%8BWindows/%E9%87%8D%E5%91%BD%E5%90%8D%E7%94%B5%E8%84%91%E5%90%8D%E7%A7%B0.png" srcset="/img/loading.gif" alt="重命名电脑名称"></p>
+<h2 id="下载安装软件"><a href="#下载安装软件" class="headerlink" title="下载安装软件"></a>下载安装软件</h2><h3 id="AMD-Radeon™-Software-Adrenalin-2020-Edition"><a href="#AMD-Radeon™-Software-Adrenalin-2020-Edition" class="headerlink" title="AMD Radeon™ Software Adrenalin 2020 Edition"></a>AMD Radeon™ Software Adrenalin 2020 Edition</h3><p>AMD yes！</p>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://www.amd.com/zh-hans/support">https://www.amd.com/zh-hans/support</a></p>
+<h3 id="360"><a href="#360" class="headerlink" title="360"></a>360</h3><p><code>Windows</code> 用户基本都有一个习惯，那就是装完系统之后装个杀毒软件，那样觉得电脑才比较安全，这是错误的！电脑的安全在于用户本身的使用习惯。<br>为什么我用 <code>360</code> 全家桶，其实主要有三个理由</p>
+<ol>
+<li>我不喜欢裸奔，对于程序员来说，使用电脑基本都有良好的习惯，所以很多程序员喜欢裸奔，也不会感染木马病毒。但是有些开发工具和软件是破解的，破解的程序权限都很高，它是比较危险的。装个杀毒软件预防一下，或丢进沙盒环境运行还是有点必要的。</li>
+<li>既然不裸奔，那就得选一个杀毒软件，现在杀毒软件很多，哪一个适合自己才是关键，我个人比较关注杀毒软件的查杀率，<code>360</code> 相比较腾讯和火绒的查杀率还是比较高的，所以我用的 <code>360</code>。</li>
+<li><code>360</code> 的生态，驱动软件和压缩软件都不错！免费无广告！弹窗可以永久关闭。</li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://weishi.360.cn/">360 安全卫士</a></li>
+<li><a target="_blank" rel="noopener" href="https://dm.weishi.360.cn/home.html">360 驱动大师</a></li>
+<li><a target="_blank" rel="noopener" href="https://yasuo.360.cn/">360 压缩</a> （不用 <code>360</code> 全家桶的可以装国际版的）</li>
+</ul>
+<h3 id="Google-Chrome"><a href="#Google-Chrome" class="headerlink" title="Google Chrome"></a>Google Chrome</h3><p>程序员最常用的浏览器</p>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://www.google.cn/intl/zh-CN/chrome/">https://www.google.cn/intl/zh-CN/chrome/</a></p>
+<p><a target="_blank" rel="noopener" href="https://chrome.google.com/webstore/category/extensions?hl=zh-CN">Chrome 网上应用店</a> 推荐插件：</p>
+<ul>
+<li><p>Vue.js devtools</p>
+</li>
+<li><p>React Developer Tools</p>
+</li>
+<li><p>JSON-handle （一位老师推荐的，用过之后感觉非常不错）</p>
+</li>
+<li><p>Google 翻译</p>
+</li>
+<li><p>Wappalyzer （分析网站使用到到技术）</p>
+</li>
+</ul>
+<p>我喜欢把 <code>Chrome</code> 的图标改成 <code>Chrome Canary</code> 的图标，这个图标好看！</p>
+<p><img src="/images/posts/%E8%A3%85%E5%AE%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E5%90%8E%E6%88%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E5%81%9A%E4%BB%80%E4%B9%88%E4%B9%8BWindows/Chrome.png" srcset="/img/loading.gif" alt="Chrome"></p>
+<h3 id="Visual-Studio-Code"><a href="#Visual-Studio-Code" class="headerlink" title="Visual Studio Code"></a>Visual Studio Code</h3><p>几乎支持所有项目的开发，特别适合前端开发，小巧的代码编辑器。</p>
+<p>插件推荐：</p>
+<ul>
+<li><p>Chinese (Simplified) Language Pack for Visual Studio Code</p>
+</li>
+<li><p>vscode-icons</p>
+</li>
+<li><p>GitLens — Git supercharged</p>
+</li>
+<li><p>Python</p>
+</li>
+<li><p>Vetur</p>
+</li>
+<li><p>YAML</p>
+</li>
+<li><p>Docker</p>
+</li>
+<li><p>Prettier - Code formatter</p>
+</li>
+<li><ul>
+<li>Prettier: Arrow Parens<br>当箭头函数仅有一个参数时加上括号</li>
+</ul>
+</li>
+<li><ul>
+<li><ul>
+<li><code>avoid</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li>Prettier: Jsx Single Quote</li>
+</ul>
+</li>
+<li><ul>
+<li><ul>
+<li><input checked="" disabled="" type="checkbox"> 在 JSX 中使用单引号而不是双引号</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li>Prettier: Package Manager<br>The package manager you use to install node modules.</li>
+</ul>
+</li>
+<li><ul>
+<li><ul>
+<li><code>yarn</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li>Prettier: Semi</li>
+</ul>
+</li>
+<li><ul>
+<li><ul>
+<li><input disabled="" type="checkbox"> 是否在每行末尾添加分号</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li>Prettier: Single Quote</li>
+</ul>
+</li>
+<li><ul>
+<li><ul>
+<li><input checked="" disabled="" type="checkbox"> 如果为 <code>true</code>，将使用单引号而不是双引号</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li>Prettier: Trailing Comma<br>尽可能控制尾随逗号的输出。 有效选项： <code>none</code> - 无尾随逗号，<code>es5</code> - 在 ES5 中有效的尾随逗号（对象，数组等，<code>all</code> - 尾随逗号 尽可能（函数参数）</li>
+</ul>
+</li>
+<li><ul>
+<li><ul>
+<li><code>none</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>编辑器设置：</p>
+<ul>
+<li>Editor: Mouse Wheel Zoom</li>
+<li><ul>
+<li><input checked="" disabled="" type="checkbox"> 按住 Ctrl 键并滚动鼠标滚轮时对编辑器字体大小进行缩放。</li>
+</ul>
+</li>
+</ul>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+<h3 id="IntelliJ-IDEA"><a href="#IntelliJ-IDEA" class="headerlink" title="IntelliJ IDEA"></a>IntelliJ IDEA</h3><p>JetBrains 家的 <code>IDE</code> 绝对的强大，好用。</p>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a></p>
+<p><code>IntelliJ IDEA</code> 设置</p>
+<p><img src="/images/posts/%E8%A3%85%E5%AE%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E5%90%8E%E6%88%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E5%81%9A%E4%BB%80%E4%B9%88%E4%B9%8BWindows/IDEA.png" srcset="/img/loading.gif" alt="IDEA"></p>
+<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><blockquote>
+<p><code>Git</code> 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</p>
+<p><code>Git</code> 是 <a target="_blank" rel="noopener" href="https://github.com/torvalds"><code>Linus Torvalds</code></a> 为了帮助管理 <a target="_blank" rel="noopener" href="https://github.com/torvalds/linux"><code>Linux</code></a> 内核开发而开发的一个开放源码的版本控制软件。</p>
+<p><code>Git</code> 与常用的版本控制工具 <code>CVS</code>, <code>Subversion</code> 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。</p>
+<p>摘于菜鸟教程 <a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-tutorial.html">https://www.runoob.com/git/git-tutorial.html</a></p>
+</blockquote>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<h3 id="FFmpeg"><a href="#FFmpeg" class="headerlink" title="FFmpeg"></a>FFmpeg</h3><p><a target="_blank" rel="noopener" href="https://www.ffmpeg.org/">FFmpeg</a> 是视频处理最常用的开源软件。</p>
+<p>相关教程可以阅读 <a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/">阮一峰</a> 写的一篇关于 <a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2020/01/ffmpeg.html">FFmpeg 视频处理入门教程</a> 的文章。</p>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://www.ffmpeg.org/download.html">https://www.ffmpeg.org/download.html</a></p>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://github.com/BtbN/FFmpeg-Builds/releases">https://github.com/BtbN/FFmpeg-Builds/releases</a></p>
+<p>添加 <code>bin</code> 目录到系统环境变量中</p>
+<h3 id="OBS-Studio"><a href="#OBS-Studio" class="headerlink" title="OBS Studio"></a>OBS Studio</h3><p>开源的推流软件，还可以录制视频。</p>
+<p>录制视频建议把格式修改为 <code>mp4</code> 格式。</p>
+<p>设置 &gt; 输出 &gt; 录像 &gt; 格式 &gt; 修改为 <code>mp4</code>。</p>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://obsproject.com/">https://obsproject.com/</a></p>
+<h3 id="Shadowsocks"><a href="#Shadowsocks" class="headerlink" title="Shadowsocks"></a>Shadowsocks</h3><p>科学上网用</p>
+<h3 id="Microsoft-Office-2019"><a href="#Microsoft-Office-2019" class="headerlink" title="Microsoft Office 2019"></a>Microsoft Office 2019</h3><p>下载地址：<a target="_blank" rel="noopener" href="https://msdn.itellyou.cn/">https://msdn.itellyou.cn/</a></p>
+<p>激活软件：MicroKMS 神龙版 <a target="_blank" rel="noopener" href="http://www.yishimei.cn/network/319.html">http://www.yishimei.cn/network/319.html</a></p>
+<h3 id="Adobe"><a href="#Adobe" class="headerlink" title="Adobe"></a>Adobe</h3><p>大佬 vposy 破解封装 嬴政天下 Adobe 2020 Windows 大师版。</p>
+<p>Weibo@vposy</p>
+<h3 id="Logitech-游戏软件"><a href="#Logitech-游戏软件" class="headerlink" title="Logitech 游戏软件"></a>Logitech 游戏软件</h3><p>下载地址：<a target="_blank" rel="noopener" href="https://support.logi.com/hc/zh-cn/articles/360025298053">https://support.logi.com/hc/zh-cn/articles/360025298053</a></p>
+<h3 id="ProperTree"><a href="#ProperTree" class="headerlink" title="ProperTree"></a>ProperTree</h3><p><a target="_blank" rel="noopener" href="https://github.com/corpnewt/ProperTree">ProperTree</a> 是使用 <code>Python</code>（与 2.x 和 3.x 兼容）和 <code>Tkinter</code> 编写的跨平台 GUI plist 编辑器。</p>
+<p>下载：</p>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> ~/Application<br>git <span class="hljs-built_in">clone</span> https://github.com/corpnewt/ProperTree.git<br></code></pre></div></td></tr></table></figure>
+<p>发送 <code>ProperTree.bat</code> 到桌面快捷方式</p>
+<h3 id="balenaEtcher"><a href="#balenaEtcher" class="headerlink" title="balenaEtcher"></a>balenaEtcher</h3><blockquote>
+<p>轻松，安全地将 <code>Flash OS</code> 映像复制到 <code>SD</code> 卡和 <code>USB</code> 驱动器。</p>
+</blockquote>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a></p>
+<h3 id="DiskGenius"><a href="#DiskGenius" class="headerlink" title="DiskGenius"></a>DiskGenius</h3><blockquote>
+<p><code>DiskGenius</code> 是一款专业级的 数据恢复软件 ，算法精湛、功能强大，用户群体广泛；支持各种情况下的文件恢复、分区恢复，恢复效果好；文件预览、扇区编辑、加密分区恢复、<code>Ext4</code> 分区恢复、<code>RAID</code> 恢复等高级功能应有尽有，二十年匠心之作！</p>
+</blockquote>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://www.diskgenius.cn/download.php">https://www.diskgenius.cn/download.php</a></p>
+<h3 id="TIM"><a href="#TIM" class="headerlink" title="TIM"></a>TIM</h3><p>下载地址：<a target="_blank" rel="noopener" href="https://office.qq.com/download.html">https://office.qq.com/download.html</a></p>
+<h3 id="微信"><a href="#微信" class="headerlink" title="微信"></a>微信</h3><p>下载地址：<a target="_blank" rel="noopener" href="https://pc.weixin.qq.com/">https://pc.weixin.qq.com/</a></p>
+<h3 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h3><p>下载地址：<a target="_blank" rel="noopener" href="https://music.163.com/#/download">https://music.163.com/#/download</a></p>
+<h2 id="搭建开发环境"><a href="#搭建开发环境" class="headerlink" title="搭建开发环境"></a>搭建开发环境</h2><h3 id="前端开发"><a href="#前端开发" class="headerlink" title="前端开发"></a>前端开发</h3><h4 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h4><p>下载选择 <code>LTS</code> 版本。</p>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a></p>
+<h4 id="Yarn"><a href="#Yarn" class="headerlink" title="Yarn"></a>Yarn</h4><p>下载地址：<a target="_blank" rel="noopener" href="https://classic.yarnpkg.com/en/docs/install#windows-stable">https://classic.yarnpkg.com/en/docs/install#windows-stable</a></p>
+<p><code>npm</code> 和 <code>yarn</code> 设置国内淘宝镜像：</p>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">npm <span class="hljs-built_in">set</span> registry https://r.npm.taobao.org<br>npm <span class="hljs-built_in">set</span> disturl https://npm.taobao.org/dist<br><br>npm <span class="hljs-built_in">set</span> sass_binary_site https://npm.taobao.org/mirrors/node-sass<br>npm <span class="hljs-built_in">set</span> electron_mirror https://npm.taobao.org/mirrors/electron/<br>npm <span class="hljs-built_in">set</span> puppeteer_download_host https://npm.taobao.org/mirrors<br>npm <span class="hljs-built_in">set</span> chromedriver_cdnurl https://npm.taobao.org/mirrors/chromedriver<br>npm <span class="hljs-built_in">set</span> operadriver_cdnurl https://npm.taobao.org/mirrors/operadriver<br>npm <span class="hljs-built_in">set</span> phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs<br>npm <span class="hljs-built_in">set</span> selenium_cdnurl https://npm.taobao.org/mirrors/selenium<br>npm <span class="hljs-built_in">set</span> node_inspector_cdnurl https://npm.taobao.org/mirrors/node-inspector<br><br>npm cache clean --force<br><br>yarn config <span class="hljs-built_in">set</span> registry https://r.npm.taobao.org<br>yarn config <span class="hljs-built_in">set</span> disturl https://npm.taobao.org/dist<br><br>yarn config <span class="hljs-built_in">set</span> sass_binary_site https://npm.taobao.org/mirrors/node-sass<br>yarn config <span class="hljs-built_in">set</span> electron_mirror https://npm.taobao.org/mirrors/electron/<br>yarn config <span class="hljs-built_in">set</span> puppeteer_download_host https://npm.taobao.org/mirrors<br>yarn config <span class="hljs-built_in">set</span> chromedriver_cdnurl https://npm.taobao.org/mirrors/chromedriver<br>yarn config <span class="hljs-built_in">set</span> operadriver_cdnurl https://npm.taobao.org/mirrors/operadriver<br>yarn config <span class="hljs-built_in">set</span> phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs<br>yarn config <span class="hljs-built_in">set</span> selenium_cdnurl https://npm.taobao.org/mirrors/selenium<br>yarn config <span class="hljs-built_in">set</span> node_inspector_cdnurl https://npm.taobao.org/mirrors/node-inspector<br><br>yarn cache clean<br></code></pre></div></td></tr></table></figure>
+<h4 id="Vue-CLI"><a href="#Vue-CLI" class="headerlink" title="Vue CLI"></a>Vue CLI</h4><p>安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">yarn global add @vue/cli<br></code></pre></div></td></tr></table></figure>
+<p>创建一个项目：</p>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">vue create &lt;project-name&gt;<br></code></pre></div></td></tr></table></figure>
+<h4 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h4><p>安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">yarn global add hexo-cli<br></code></pre></div></td></tr></table></figure>
+<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><ul>
+<li><input checked="" disabled="" type="checkbox"> Add Python 3.9 to PATH</li>
+</ul>
+<p><img src="/images/posts/%E8%A3%85%E5%AE%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E5%90%8E%E6%88%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E5%81%9A%E4%BB%80%E4%B9%88%E4%B9%8BWindows/Python.png" srcset="/img/loading.gif" alt="Python"></p>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
+<h3 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><p>JDK 下载地址：<a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/javase-jdk11-downloads.html">https://www.oracle.com/java/technologies/javase-jdk11-downloads.html</a></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Windows/">Windows</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/12/27/%E8%A3%85%E5%AE%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E5%90%8E%E6%88%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E5%81%9A%E4%BB%80%E4%B9%88%E4%B9%8BmacOS/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">装完系统之后我通常会做什么之macOS</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/12/25/%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B%E6%80%8E%E4%B9%88%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/">
+                        <span class="hidden-mobile">简单介绍一下怎么搭建博客网站</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" aria-label="button" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     © 2020 Hung 由 <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> 强力驱动 <i class="iconfont icon-love"></i> 主题:  <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+<script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
